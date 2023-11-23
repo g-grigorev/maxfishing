@@ -1,0 +1,17 @@
+@function bp($key) {
+  @if map-has-key($bp, $key) {
+    @return map-get($bp, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $bp.";
+  @return null;
+}
+
+@function font($key) {
+  @if map-has-key($font-size, $key) {
+    @return map-get($font-size, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $font-size.";
+  @return null;
+}

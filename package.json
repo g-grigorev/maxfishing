@@ -1,0 +1,26 @@
+{
+  "name": "maxfishing",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "sass": "^1.68.0",
+    "sharp": "^0.32.6",
+    "svgo": "^3.0.2",
+    "terser": "^5.20.0",
+    "vite": "^4.4.5",
+    "vite-aliases": "^0.11.3",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-image-optimizer": "^1.1.7"
+  },
+  "main": "vite.config.js",
+  "author": "g.grigorev",
+  "license": "ISC",
+  "description": ""
+}

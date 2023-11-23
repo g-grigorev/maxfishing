@@ -1,0 +1,14 @@
+@each $value in $font-init-wlist {
+  @font-face {
+    font-family: '#{$font-init-name}';
+    src: url('@/fonts/#{$font-init-path}/#{$value}.eot');
+    src: url('@/fonts/#{$font-init-path}/#{$value}.eot?#iefix') format('embedded-opentype'),
+      // url('@/assets/fonts/#{$font-init-path}/300.svg') format('svg'),
+      url('@/fonts/#{$font-init-path}/#{$value}.ttf') format('truetype'),
+      // url('@/fonts/#{$font-init-path}/#{$value}.woff') format('woff'),
+      url('@/fonts/#{$font-init-path}/#{$value}.woff2') format('woff2');
+    font-weight: #{$value};
+    font-style: normal;
+    font-display: swap;
+  }
+}

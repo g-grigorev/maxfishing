@@ -1,0 +1,58 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "~font/*": [
+                "src/font/*"
+            ],
+            "~images/*": [
+                "src/images/*"
+            ],
+            "~js/*": [
+                "src/js/*"
+            ],
+            "~styles/*": [
+                "src/styles/*"
+            ],
+            "~/*": [
+                "src/*"
+            ],
+            "font/*": [
+                "src/font/*"
+            ],
+            "images/*": [
+                "src/images/*"
+            ],
+            "js/*": [
+                "src/js/*"
+            ],
+            "styles/*": [
+                "src/styles/*"
+            ],
+            "/*": [
+                "src/*"
+            ],
+            "@font/*": [
+                "src/font/*"
+            ],
+            "@images/*": [
+                "src/images/*"
+            ],
+            "@js/*": [
+                "src/js/*"
+            ],
+            "@styles/*": [
+                "src/styles/*"
+            ],
+            "@/*": [
+                "src/*"
+            ],
+            "@suisseintl/*": [
+                "src/font/suisseintl/*"
+            ],
+            "@fonts/*": [
+                "src/fonts/*"
+            ]
+        }
+    }
+}

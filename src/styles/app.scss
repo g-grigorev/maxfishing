@@ -1,0 +1,16 @@
+@use "sass:math";
+@import
+	'helpers/config',
+	'helpers/functions',
+	'helpers/mixins',
+	'helpers/fonts',
+	'helpers/reset',
+	'helpers/base';
+
+@import 'maxfishing';
+
+@import
+  'layout/header',
+  'layout/footer';
+
+@import 'styles';

@@ -1,0 +1,170 @@
+
+
+
+@function em($pixels, $context: font(default)) {
+  @return #{math.div($pixels, $context)}em;
+}
+@function rem($pixels, $context: font(default)) {
+  @return #{math.div($pixels, $context)}rem;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+
+@mixin hover {
+  @media only screen and (min-width: bp(lg)) {
+    @content;
+  }
+}
+
+@mixin bp-xxxlg {
+  @media only screen and (min-width: bp(xxxlg)) {
+    @content;
+  }
+}
+
+@mixin bp-xxlg {
+  @media only screen and (min-width: bp(xxlg)) {
+    @content;
+  }
+}
+
+@mixin bp-xlg {
+  @media only screen and (min-width: bp(xlg)) {
+    @content;
+  }
+}
+@mixin bp-lg-xlg {
+  @media screen and (min-width: bp(lg)) and (max-width: bp(xlg)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @media only screen and (min-width: bp(lg)) {
+    @content;
+  }
+}
+
+@mixin bp-xlg-xxlg {
+  @media screen and (min-width: bp(xlg)) and (max-width: bp(xxlg)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-md-lg {
+  @media screen and (min-width: bp(md)) and (max-width: bp(lg)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-md {
+  @media only screen and (min-width: bp(md)) {
+    @content;
+  }
+}
+
+@mixin bp-xs-sm {
+  @media screen and (min-width: bp(xs)) and (max-width: bp(sm)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-sm-md {
+  @media screen and (min-width: bp(sm)) and (max-width: bp(md)-0.1) {
+    @content;
+  }
+}
+@mixin bp-sm-lg {
+  @media screen and (min-width: bp(sm)) and (max-width: bp(lg)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-sm {
+  @media only screen and (min-width: bp(sm)) {
+    @content;
+  }
+}
+
+
+@mixin bp-xs { 
+  @media only screen and (min-width: bp(xs)) {
+    @content;
+  }
+}
+@mixin bp-xxs { 
+  @media only screen and (min-width: bp(xxs)) {
+    @content;
+  }
+}
+
+
+//
+@mixin bp-max-xxlg {
+  @media only screen and (max-width: bp(xxlg)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-max-xlg {
+  @media only screen and (max-width: bp(xlg)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-max-lg {
+  @media only screen and (max-width: bp(lg)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-max-md {
+  @media only screen and (max-width: bp(md)-0.1) {
+    @content;
+  }
+}
+
+@mixin bp-max-sm {
+  @media only screen and (max-width: bp(sm)-0.1) {
+    @content;
+  }
+}
+@mixin bp-max-xs { 
+  @media only screen and (max-width: bp(xs)-0.1) {
+    @content;
+  }
+}
+@mixin bp-max-xxs { 
+  @media only screen and (max-width: bp(xxs)-0.1) {
+    @content;
+  }
+}
+//
+
+// height
+@mixin bp-h-sm {
+  @media only screen and (min-height: 500px) {
+    @content;
+  }
+}
+@mixin bp-h-md {
+  @media only screen and (min-height: 800px) {
+    @content;
+  }
+}
+@mixin bp-h-lg {
+  @media only screen and (min-height: 900px) {
+    @content;
+  }
+}
+
+
+
+//@include respond-to(tablets) { width: 240px; };
